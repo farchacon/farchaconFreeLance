@@ -1,0 +1,1962 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>.::Centro Clinico Coromoto::.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logoCoromoto.ico">
+    <meta charset="utf-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">   
+    <script src="js/jquery-1.6.2.min.js" type="text/javascript"></script> 
+<style>
+$(document).ready(function(){
+    $('h2').append('<a href="#top" class="gototop">Subir</a>');
+    linkInterno = $('a[href^="#"]');
+    linkInterno.on('click',function(e) {
+	e.preventDefault();
+	var href = $(this).attr('href');
+	$('html, body').animate({ scrollTop : $( href ).offset().top }, 'slow', 'easeInOutExpo');
+	});
+});
+$(function() {
+				var $elem = $('#content');
+				
+				$('#nav_up').fadeIn('slow');
+				$('#nav_down').fadeIn('slow');  
+				
+				$(window).bind('scrollstart', function(){
+					$('#nav_up,#nav_down').stop().animate({'opacity':'0.2'});
+				});
+				$(window).bind('scrollstop', function(){
+					$('#nav_up,#nav_down').stop().animate({'opacity':'1'});
+				});
+				
+				$('#nav_down').click(
+					function (e) {
+						$('html, body').animate({scrollTop: $elem.height()}, 800);
+					}
+				);
+				$('#nav_up').click(
+					function (e) {
+						$('html, body').animate({scrollTop: '0px'}, 800);
+					}
+				);
+            });</style>	
+	<!--[if lt IE 7]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"  alt="" /></a>
+        </div>
+	<![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+        <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+	<![endif]-->
+</head>
+<body id="page4">
+	<!--==============================header=================================-->
+    <header>
+    	<div class="row-1">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="grid_12">
+                    	<nav>
+                            <ul class="menu">
+                                <li><a href="index.html">Nosotros</a></li>
+                                <li><a href="servicios.html">Servicios</a></li>
+                                <li><a href="galeria.html">Galeria</a></li>
+                                <li><a class="directorio" href="directorio.html">Directorio MÉdico</a></li>
+                                <li><a href="contactos.html">Contactos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="row-2">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="grid_9" align="center">
+                    	<h1>
+                        <img src="images/logoCoromoto.jpg" width="60" height="85">
+                            <a class="logo" href="index.html">Centro Clinico Coromoto</a>
+                            <span>C.A.</span>
+                        </h1>
+                         <h6 class="grid_9">&quot;Donde tu salud es lo primero&quot; </h6>
+                    </div>
+                    <div class="grid_3">
+<!--                    	<form id="search-form" method="post" enctype="multipart/form-data">
+                            <fieldset>	
+                                <div class="search-field">
+                                    <input name="search" type="text" />
+                                    <a class="search-button" href="#" onClick="document.getElementById('search-form').submit()"><span>search</span></a>	
+                                </div>						
+                            </fieldset>
+                        </form>-->
+                     </div>
+                     <div class="clear"></div>
+                </div>
+            </div>
+        </div>    	
+    </header>    
+<!-- content -->
+    <section id="content">
+        <div class="bg-top">
+        	<div class="bg-top-2">
+                <div class="bg">
+                    <div class="bg-top-shadow">
+                        <div class="main">
+                            <div class="box">
+                                <div class="padding">
+                                    <div class="container_12">
+                                        <div class="wrapper">
+                                            <div class="grid_12">
+                                            	<div class="indent-left p2">
+                                                	<h3 class="p0">Directorio Médico</h3>
+													<a href="#a"><span class="buttonbusqueda">Anestesiología</span></a>
+                                                    <a href="#b"><span class="buttonbusqueda">Cardiología</span></a>
+                                                    <a href="#c"><span class="buttonbusqueda">Cirugía Plástica</span></a>
+                                                    <a href="#d"><span class="buttonbusqueda">Cirugía Pediátrica</span></a>
+                                                    <a href="#e"><span class="buttonbusqueda">Dermatología</span></a>
+                                                    <a href="#f"><span class="buttonbusqueda">Endocrinología</span></a>
+                                                    <a href="#g"><span class="buttonbusqueda">Gastroenterología</span></a>
+                                                    <a href="#h"><span class="buttonbusqueda">Ginecobstetricia</span></a>
+                                                    <a href="#i"><span class="buttonbusqueda">Medicina Crítica</span></a>
+                                                    <a href="#j"><span class="buttonbusqueda">Medicina Interna</span></a>
+                                                    <a href="#k"><span class="buttonbusqueda">Neonatología</span></a>
+                                                    <a href="#l"><span class="buttonbusqueda">Neumonología</span></a>
+                                                    <a href="#m"><span class="buttonbusqueda">Neurología</span></a>
+                                                    <a href="#n"><span class="buttonbusqueda">Neurocirugía</span></a>
+                                                    <a href="#o"><span class="buttonbusqueda">Oftalmología</span></a>
+                                                    <a href="#p"><span class="buttonbusqueda">Oncología</span></a>
+                                                    <a href="#q"><span class="buttonbusqueda">ORL</span></a>
+                                                    <a href="#r"><span class="buttonbusqueda">Pediatría</span></a>
+                                                    <a href="#s"><span class="buttonbusqueda">Traumatología</span></a>
+                                                    <a href="#t"><span class="buttonbusqueda">Urología</span></a>
+                                                    <a href="#u"><span class="buttonbusqueda">Cirugía General</span></a>
+                                                    <a href="#v"><span class="buttonbusqueda">Médicos Residentes</span></a>
+                                                    <a href="#w"><span class="buttonbusqueda">Médicos a Disponibilidad</span></a>
+                                                    <br/><br/>
+											<div align="center" style="font-size:20px">Especialistas</div>
+                                                </div>
+                                                <!-- FILA 1 ---------------->
+                                                <!-- ANESTESIOLOGIA ---------------->
+                                                  <span class="button" id="a">Anestesiología</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                                  <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Dr. David V. Parra</p>
+															<p class="color-5 prev-indent-bot">MSDS: 16.530</p>
+                                                            <p class="color-5 prev-indent-bot">
+																&deg;<strong>Ubicacion del Consultorio: </strong>Planta Baja<br>
+                                                                &deg;<strong>Dias de Consulta: </strong> Lunes a Viernes:<br>
+																&deg;<strong>Horario de Consulta:</strong> 2:00 - 6:00 pm<br>
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                            <!--<div class="wrapper">
+                                                            	<!--<span class="price fleft">$45.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>
+                                                            </div>-->
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4">
+                                                        <div class="indent3">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">V&iacute;ctor Padr&oacute;n</p>
+															<p class="color-5 prev-indent-bot">V-04141950-8</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+															</p>
+                                                            <!--<div class="wrapper">
+                                                            	<!--<span class="price fleft">$45.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>
+                                                            </div>-->
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 omega">
+                                                        <div class="indent-right">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">&Aacute;ngel Hern&aacute;ndez</p>
+															<p class="color-5 prev-indent-bot">MSDS: 38.477</p>
+                                                            <p class="color-5">
+
+                                                                &deg;<strong>Email</strong>:<br>
+															</p>
+                                                            <!--<div class="wrapper">
+                                                            	<!--<span class="price fleft">$45.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>
+                                                            </div>-->
+                                                    </article>
+                                                </div>
+                                                <!-- FIN FILA 1 ---------------->
+                                                
+                                                <!-- FILA 2 ---------------->
+                                                <!-- CARDIOLOGIA ---------------->
+                                                <span class="button" id="b">Cardiología</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                                <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Luis Lobo</p>
+															<p class="color-5 prev-indent-bot">MSDS: 28.663</p>
+                                                            <p class="color-5">
+																&deg;<strong>Ubicacion del Consultorio: </strong>Planta Baja<br>
+                                                                &deg;<strong>Dias de Consulta: </strong> Lunes a Viernes:<br>
+                                                                &deg;<strong>Horario de Consulta:</strong> 2:00 - 6:00 pm<br>
+										                       	&deg;<strong>Email</strong>:<br>
+																</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$45.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>-->
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4">
+                                                        <div class="indent3">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Jorge Le&oacute;n</p>
+															<p class="color-5 prev-indent-bot">MSDS: 38.527</p>
+                                                            <p class="color-5">
+																&deg;<strong>Email:</strong><br>
+															</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$54.99</span>
+                                                                <a class="button" href="#">Curriculum</a>-->
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                  <!--  <article class="grid_4 omega">
+                                                        <div class="indent-right">
+                                                            <figure class="frame2 p2"><img src="images/page4-img3.jpg" alt="" /></figure>
+                                                            <p class="color-5 prev-indent-bot">XXX </p>
+															<p class="color-5 prev-indent-bot">XXX</p>
+                                                            <p>
+																&deg;<strong>Consultorio:</strong> Piso 1<br>
+                                                                &deg;<strong>Dias de Consulta: </strong>Lunes a Viernes<br>
+																&deg;<strong>Horario de Consulta:</strong> 8:00 am - 12:00 m<br>
+																&deg;<strong>Email:</strong><br>
+															</p>
+                                                            <div class="wrapper">
+                                                            	
+                                                                <a class="button fright" href="#">Curriculum</a>
+                                                            </div>
+                                                        </div>
+                                                    </article>-->
+                                                </div>
+                                                <!-- FIN FILA 2 ---------------->
+                                                <!-- FILA 3 ---------------->
+                                                <span class="button" id="c">Cirugía Plástica</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                                <div class="wrapper">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Esser Espa&ntilde;a</p>
+															<p class="color-5 prev-indent-bot">MSDS: 36.225</p>
+                                                            <p class="color-5">
+																&deg;<strong>Email:</strong><br>
+															</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$45.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>-->
+                                                            </div>
+                                                        </div>
+                                                    </article>
+<!--                                                    <article class="grid_4">
+                                                        <div class="indent3">
+                                                            <figure class="frame2 p2"><img src="images/page4-img5.jpg" alt="" /></figure>
+                                                            <p class="color-5 prev-indent-bot">XXX</p>
+															<p class="color-5 prev-indent-bot">XXX</p>
+                                                            <p>
+																&deg;<strong>Consultorio:</strong> Piso 1<br>
+                                                                &deg;<strong>Dias de Consulta: </strong> Lunes a Jueves<br>
+																&deg;<strong>Horario de Consulta:</strong> 2:00pm - 5:00 pm<br>
+																&deg;<strong>Email:</strong><br>
+															</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$54.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>
+                                                            </div>
+                                                        </div>
+                                                    </article>-->
+<!--                                                    <article class="grid_4 omega">
+                                                        <div class="indent-right">
+                                                            <figure class="frame2 p2"><img src="images/page4-img6.jpg" alt="" /></figure>
+                                                            <p class="color-5 prev-indent-bot">XXX</p>
+															<p class="color-5 prev-indent-bot">XXX</p>
+                                                            <p>
+																&deg;<strong>Consultorio: </strong>Piso 1<br>
+                                                                &deg;<strong>Dias de Consulta:</strong>Lunes a Viernes<br>
+                                                              	&deg;<strong>Horario de Consulta: </strong>2:00pm - 6:00 pm<br>
+                                                           		&deg;<strong>Email:</strong>
+															</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$38.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>
+                                                            </div>
+                                                        </div>
+                                                    </article>-->
+                                                </div>
+												<!-- FIN FILA 3 ---------------->
+												<!-- FILA 4 ---------------->
+                                                <span class="button" id="d">Cirugía Pediátrica</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+												     <div class="wrapper">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Luis Olivero</p>
+															<p class="color-5 prev-indent-bot">MSDS: 15.313</p>
+                                                            <p class="color-5">
+                                                           		&deg;<strong>Email:</strong>
+															</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$45.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>-->
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4">
+                                                        <div class="indent3">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Lenny Hidalgo</p>
+															<p class="color-5 prev-indent-bot">MSDS: 56.160</p>
+                                                            <p class="color-5">
+																&deg;<strong>Consultorio: </strong>Piso 3<br>
+                                                                &deg;<strong>Dias de Consulta:</strong> Lunes a Viernes</strong><br>
+                                                              	&deg;<strong>Horario de Consulta:</strong> 2:00pm - 4:00 pm</strong><br>
+                                                           		&deg;<strong>Email:</strong>
+															</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$54.99</span>
+                                                                <a class="button" href="#">Curriculum</a>-->
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                 <!--   <article class="grid_4 omega">
+                                                        <div class="indent-right">
+                                                            <figure class="frame2 p2"><img src="images/page4-img6.jpg" alt="" /></figure>
+                                                            <p class="color-5 prev-indent-bot">XXX</p>
+															<p class="color-5 prev-indent-bot">XXX</p>
+                                                            <p>
+																&deg;<strong>Consultorio: </strong>Piso 3<br>
+                                                                &deg;<strong>Dias de Consulta:</strong>Lunes a Jueves:<br>
+                                                              	&deg;<strong>Horario de Consulta: </strong>10:00am - 2:00 pm<br>
+                                                           		&deg;<strong>Email:</strong>
+															</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$38.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>
+                                                            </div>
+                                                        </div>
+                                                    </article>-->
+                                                </div>
+												<!-- FIN FILA 4 ---------------->
+												<!-- FILA 5 ---------------->
+                                                <!-- DERMATOLOGIA ---------------->
+												<span class="button" id="e">Dermatología</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+												    <div class="wrapper">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">H�ctor Rincones</p>
+															<p class="color-5 prev-indent-bot">MSDS: 12.344</p>
+                                                            <p class="color-5">
+                                                           		&deg;<strong>Email:</strong>
+															</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$45.99</span>
+                                                                <a class="button" href="#">Curriculum</a>-->
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                   <!-- <article class="grid_4">
+                                                        <div class="indent3">
+                                                            <figure class="frame2 p2"><img src="images/page4-img5.jpg" alt="" /></figure>
+                                                            <p class="color-5 prev-indent-bot">Dra. LENNY HIDALGO</p>
+															<p class="color-5 prev-indent-bot">Cirugía y Urología Infantil</p>
+                                                            <p>
+																&deg;<strong>Consultorio: </strong>Piso 3<br>
+                                                                &deg;<strong>Dias de Consulta:</strong> Lunes a Viernes<br>
+                                                              	&deg;<strong>Horario de Consulta: </strong>2:00pm - 5:00 pm<br>
+                                                           		&deg;<strong>Email:</strong>
+															</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$54.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>
+                                                            </div>
+                                                        </div>
+                                                    </article>-->
+                                                  <!--  <article class="grid_4 omega">
+                                                        <div class="indent-right">
+                                                            <figure class="frame2 p2"><img src="images/page4-img6.jpg" alt="" /></figure>
+                                                            <p class="color-5 prev-indent-bot">Dra. MAYRA MATUTE</p>
+														  	<p class="color-5 prev-indent-bot">Psicólogo Clínico</p>
+                                                            <p>&deg;<strong>Consultorio: </strong>Piso 3<br>
+															&deg;<strong>Dias de Consulta:</strong> Previa cita<br>
+															&deg;<strong>Horario de Consulta: </strong>Horario matutino<br>
+                                                            &deg;<strong>Email:</strong> </p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$38.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>
+                                                            </div>
+                                                        </div>
+                                                    </article>-->
+                                                </div>
+												
+											<!-- FIN FILA 5 ---------------->
+                                            <!-- FILA 6 ---------------->												
+											 <!-- Endocrinolog?a ---------------->	
+                                             <span class="button" id="f">Endocrinología</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>										     
+                                             <div class="wrapper">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Adalgisa Moreno</p>
+														  <p class="color-5 prev-indent-bot">MSDS: 23.095</p>
+                                                            <p class="color-5">
+																&deg;<strong>Consultorio: </strong>Piso 3<br>
+                                                                &deg;<strong>Dias de Consulta:</strong>Lunes a Viernes<br>
+                                                              	&deg;<strong>Horario de Consulta: </strong>Apartir de las 2:00pm<br>
+                                                           		&deg;<strong>Email:</strong>
+															</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$45.99</span>
+                                                                <a class="button" href="#">Curriculum</a>-->
+                                                            </div>
+                                                        </div>
+                                                    <!--</article>
+                                                    <article class="grid_4">
+                                                        <div class="indent3">
+                                                            <figure class="frame2 p2"><img src="images/page4-img5.jpg" alt="" /></figure>
+                                                            <p class="color-5 prev-indent-bot">Dra. ANYRENE GASTELL</p>
+															<p class="color-5 prev-indent-bot">Ginecología y Obstetricia</p>
+                                                            <p>
+																	&deg;<strong>Consultorio: </strong>Piso 3<br>
+                                                                &deg;<strong>Dias de Consulta:</strong> Lunes a Viernes</strong><br>
+                                                              	&deg;<strong>Horario de Consulta: </strong>8:30 am - 12:00 m</strong><br>
+                                                           		&deg;<strong>Email:</strong>
+															</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$54.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>
+                                                            </div>
+                                                        </div>
+                                                    </article>-->
+                                                   <!-- <article class="grid_4 omega">
+                                                        <div class="indent-right">
+                                                            <figure class="frame2 p2"><img src="images/page4-img6.jpg" alt="" /></figure>
+                                                            <p class="color-5 prev-indent-bot">Dr. LUIS EDUARDO LOBO</p>
+															<p class="color-5 prev-indent-bot">Cardiólogo</p>
+                                                            <p>
+																&deg;<strong>Consultorio: </strong>Piso 3<br>
+                                                                &deg;<strong>Dias de Consulta:</strong>Lunes a Viernes:<br>
+                                                              	&deg;<strong>Horario de Consulta:</strong> 2:00pm - 6:00 pm<br>
+
+                                                           		&deg;<strong>Email:</strong>
+												      </p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$38.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>
+                                                            </div>
+                                                        </div>
+                                                    </article>-->
+                                                </div>
+												<!-- FIN FILA 6 ---------------->
+												<!-- FILA 7 ---------------->												
+											 	<!-- Endocrinolog?a ---------------->
+													<span class="button" id="g">Gastroenterología</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+												    <div class="wrapper">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Julio C. Vargas</p>
+															<p class="color-5 prev-indent-bot">MSDS: 61.567</p>
+                                                            <p class="color-5">
+																&deg;<strong>Consultorio: </strong>Piso 3<br>
+                                                                &deg;<strong>Dias de Consulta: </strong>Lunes a Viernes<br>
+                                                              	&deg;<strong>Horario de Consulta: </strong>2:00 - 6:00 pm<br>
+                                                           		&deg;<strong>Email:</strong><br>
+														  </p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$45.99</span>
+                                                                <a class="button" href="#">Curriculum</a>-->
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4">
+                                                        <div class="indent3">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Vicente Mej&iacute;as</p>
+															<p class="color-5 prev-indent-bot">MSDS: 32.127</p>
+                                                            <p class="color-5">
+                                                           		&deg;<strong>Email:</strong><br>
+															</p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$54.99</span>
+                                                                <a class="button" href="#">Curriculum</a>-->
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                   <!-- <article class="grid_4 omega">
+                                                        <div class="indent-right">
+                                                            <figure class="frame2 p2"><img src="images/page4-img6.jpg" alt="" /></figure>
+                                                            <p class="color-5 prev-indent-bot">Dra. CARMEN MAGO</p>
+														  <p class="color-5 prev-indent-bot">Anestesiólogo</p>
+                                                            <p>
+																&deg;<strong>Consultorio: </strong>Piso 3<br>
+                                                                &deg;<strong>Dias de Consulta:</strong>Lunes a Jueves<br>
+                                                              	&deg;<strong>Horario de Consulta: </strong>9:00am - 1:00 pm<br>
+                                                           		&deg;<strong>Email:</strong>
+											        </p>
+                                                            <div class="wrapper">
+                                                            	<!--<span class="price fleft">$38.99</span>
+                                                                <a class="button fright" href="#">Curriculum</a>
+                                                            </div>
+                                                        </div>
+                                                    </article>-->
+                                                </div>
+                                                <!-- FIN FILA 7 ---------------->
+                                                <!-- FILA 8 ---------------->
+                                                <!-- Ginecobstetricia ---------------->
+                                                  <span class="button" id="h">Ginecobstetricia </span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                                  <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Oswaldo Hern&aacute;ndez</p>
+															<p class="color-5 prev-indent-bot">MSDS: 13.866</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4">
+                                                        <div class="indent3">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Anyrene Gastell</p>
+															<p class="color-5 prev-indent-bot">MSDS: 23.941</p>
+                                                            <p class="color-5">
+																&deg;<strong>Ubicacion Consultorio: </strong>Piso 1<br>
+                                                                &deg;<strong>Dias de Consulta: </strong>Lunes a Viernes<br>
+																&deg;<strong>Horario de Consulta: </strong>3:00 - 6:00 pm<br>
+                                                                &deg;<strong>Email</strong>:<br>
+															</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 omega">
+                                                        <div class="indent-right">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">?ngela Tartaret</p>
+															<p class="color-5 prev-indent-bot">MSDS: 23.097</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+															</p>
+                                                    </article>
+                                                </div>
+                                                <!-- FIN FILA 8 ---------------->
+                                                
+                                                <!-- FILA 10 ---------------->
+                                                  <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Alba Parra</p>
+															<p class="color-5 prev-indent-bot">MSDS: 31.542</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4">
+                                                        <div class="indent3">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Abel Pano</p>
+															<p class="color-5 prev-indent-bot">MSDS: 49.805</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+															</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 omega">
+                                                        <div class="indent-right">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Evelyn Mago</p>
+															<p class="color-5 prev-indent-bot">MSDS: 63.903</p>
+                                                            <p class="color-5">
+																&deg;<strong>Consultorio:</strong> Piso 1<br>
+                                                                &deg;<strong>Dias de Consulta: </strong>Lunes a Viernes<br>
+																&deg;<strong>Horario de Consulta:</strong> 8:00 am - 12:00 m<br>
+                                                                &deg;<strong>Email</strong>:<br>
+															</p>
+                                                    </article>
+                                                </div>
+										<!-- FIN FILA 10 ---------------->													
+										<!-- FILA 11 ---------------->
+                                                                                          
+												<div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Andr�s Olivares</p>
+															<p class="color-5 prev-indent-bot">MSDS: 72593</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4">
+                                                        <div class="indent3">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Edmundo Herrera</p>
+															<p class="color-5 prev-indent-bot">MSDS: 72.804</p>
+                                                            <p class="color-5">
+																&deg;<strong>Ubicacion Consultorio: </strong>Piso 1<br>
+                                                                &deg;<strong>Dias de Consulta: </strong>Lunes a Viernes<br>
+																&deg;<strong>Horario de Consulta: </strong>3:00 - 6:00 pm<br>
+                                                                &deg;<strong>Email</strong>:<br>
+															</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 omega">
+                                                        <div class="indent-right">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Nicolina Di Sappio</p>
+															<p class="color-5 prev-indent-bot">MSDS: 49.806</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+															</p>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 11 ---------------->	
+                                        <!-- FILA 12 ---------------->                                 
+												<div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Dinorath Ojeda</p>
+															<p class="color-5 prev-indent-bot">MSDS: 24.049</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4">
+                                                        <div class="indent3">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Avelino Olivares</p>
+															<p class="color-5 prev-indent-bot">MSDS: 25.063</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+															</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 omega">
+                                                        <div class="indent-right">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Sergio P&aacute;ez</p>
+															<p class="color-5 prev-indent-bot">MSDS: 37.925</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+															</p>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 12 ---------------->
+                                        <!-- FILA 13 ---------------->                                 
+												<div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Marlessa Carrero</p>
+															<p class="color-5 prev-indent-bot">MSDS: 25.273</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 13 ---------------->		
+										<!-- FILA 14 ---------------->
+                                        <span class="button" id="i">Medicina Crítica</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Rafael Castillo</p>
+															<p class="color-5 prev-indent-bot">MSDS: 54.518</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 14 ---------------->	
+                                        <!-- FILA 15 ---------------->
+                                        <span class="button" id="j">Medicina Interna</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Ramona Parada</p>
+															<p class="color-5 prev-indent-bot">MSDS: 34.127</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 15 ---------------->
+                                        <!-- FILA 16 ---------------->
+                                        <!-- Neonatologia ---------------->
+                                        <span class="button" id="k">Neonatología</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Zunilde Contreras</p>
+															<p class="color-5 prev-indent-bot">MSDS: 50.283</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                   <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Maria D. Sojo</p>
+															<p class="color-5 prev-indent-bot">MSDS: 71.019</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Carmen Maritza Olivero</p>
+															<p class="color-5 prev-indent-bot">23.294</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                </div>
+                                        <!-- FIN FILA 16 ---------------->
+                                        
+                                        <!-- FILA 17 ---------------->
+                                        <!-- Neonatologia ---------------->
+                                        <span class="button" id="l">Neumonología</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Gonzalo Olivares</p>
+															<p class="color-5 prev-indent-bot">MSDS: 16.111</p>
+                                                            <p class="color-5">
+																&deg;<strong>Ubicacion del Consultorio: </strong>Planta Baja<br>
+                                                                &deg;<strong>Dias de Consulta: </strong> Lunes a Viernes:<br>
+																&deg;<strong>Horario de Consulta:</strong> 2:00 - 6:00 pm<br>
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                   <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Kelvin Venero</p>
+															<p class="color-5 prev-indent-bot">MSDS: 68.360</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Rafael Castillo</p>
+															<p class="color-5 prev-indent-bot">MSDS: 54.518</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 17 ---------------->
+                                        
+                                        <!-- FILA 18 ---------------->
+                                        <!-- Neonatologia ---------------->
+                                        <span class="button" id="m">Neurología</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Amalia Abreu</p>
+															<p class="color-5 prev-indent-bot">MSDS: 36.507</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 18 ---------------->
+                                        
+                                        <!-- FILA 19 ---------------->
+                                        <!-- Neurocirug?a ---------------->
+                                        <span class="button" id="n">Neurocirugía</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Alexander Krinisky</p>
+															<p class="color-5 prev-indent-bot">MSDS: 56.191</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 19 ---------------->
+                                        
+                                        <!-- FILA 20 ---------------->
+                                        <!-- Oftalmologia ---------------->
+                                        <span class="button" id="o">Oftalmología</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Luis Mart&iacute;nez</p>
+															<p class="color-5 prev-indent-bot">MSDS: 14.937</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 20 ---------------->
+                                        
+                                        <!-- FILA 21 ---------------->
+                                        <!-- Oncolog?a ---------------->
+                                        <span class="button" id="p">Oncología</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Aura Urdaneta</p>
+															<p class="color-5 prev-indent-bot">MSDS: 31.829</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 21 ---------------->
+                                        
+                                        <!-- FILA 22 ---------------->
+                                        <!-- ORL ---------------->
+                                        <span class="button" id="q">ORL</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Iv&aacute;n Monserrat</p>
+															<p class="color-5 prev-indent-bot">MSDS: 23.352</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Jorge Romero</p>
+															<p class="color-5 prev-indent-bot">MSDS: 23.660</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 22 ---------------->
+                                                                   
+                                        <!-- FILA 23 ---------------->
+                                        <!-- Pediatr?a ---------------->
+                                        <span class="button" id="r">Pediatría</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Zunilde Contreras</p>
+															<p class="color-5 prev-indent-bot">MSDS: 50.283</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Henry S?nchez</p>
+															<p class="color-5 prev-indent-bot">MSDS: 35.014</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Carmen Maritza Olivero</p>
+															<p class="color-5 prev-indent-bot">MSDS: 23.294</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 23 ---------------->
+                                        
+                                        <!-- FILA 24 ---------------->
+                                        <!-- Pediatr?a ---------------->
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Elibeth Carvajal</p>
+															<p class="color-5 prev-indent-bot">MSDS: 70.096</p>
+                                                            <p class="color-5">
+																&deg;<strong>Ubicacion del Consultorio: </strong>Planta Baja<br>
+                                                                &deg;<strong>Dias de Consulta: </strong> Lunes a Viernes:<br>
+																&deg;<strong>Horario de Consulta:</strong> 2:00 - 6:00 pm<br>
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                                <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Herbet Godoy</p>
+															<p class="color-5 prev-indent-bot">MSDS: </p>
+                                                            <p class="color-5">
+																&deg;<strong>Ubicacion del Consultorio: </strong>Planta Baja<br>
+                                                                &deg;<strong>Dias de Consulta: </strong> Lunes a Viernes:<br>
+																&deg;<strong>Horario de Consulta:</strong> 2:00 - 6:00 pm<br>
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 24 ---------------->
+                                        
+                                        <!-- FILA 25 ---------------->
+                                        <!-- Traumatolog?a ---------------->
+                                        <span class="button" id="s">Traumatología</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Elibeth Carvajal</p>
+															<p class="color-5 prev-indent-bot">MSDS: 70.096</p>
+                                                            <p class="color-5">
+																&deg;<strong>Ubicacion del Consultorio: </strong>Planta Baja<br>
+                                                                &deg;<strong>Dias de Consulta: </strong> Lunes a Viernes:<br>
+																&deg;<strong>Horario de Consulta:</strong> 2:00 - 6:00 pm<br>
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Pedro Olivero</p>
+															<p class="color-5 prev-indent-bot">MSDS: 52.964</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Rafael V. Rojas</p>
+															<p class="color-5 prev-indent-bot">MSDS: 60.972</p>
+                                                            <p class="color-5">
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 25 ---------------->
+                                        
+                                        <!-- FILA 27 ---------------->
+                                        <!-- Urolog?a ---------------->
+                                        <span class="button" id="t">Urología</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Zamir Abanhadour</p>
+															<p class="color-5 prev-indent-bot">MSDS: 22.514</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5 prev-indent-bot">Juan Rojas</p>
+															<p class="color-5 prev-indent-bot">MSDS: 31.747</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Julio C. Pino</p>
+															<p class="color-5 prev-indent-bot">MSDS: 43.168</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 27 ---------------->
+                                        
+                                        <!-- FILA 28 ---------------->
+                                        <!-- Cirug?a General---------------->
+                                        <span class="button" id="u">Cirugía General</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Robert Flores</p>
+															<p class="color-5 prev-indent-bot">MSDS: 47.031</p>
+                                                            <p class="color-5">
+																&deg;<strong>Ubicacion del Consultorio: </strong>Planta Baja<br>
+                                                                &deg;<strong>Dias de Consulta: </strong> Lunes a Viernes:<br>
+																&deg;<strong>Horario de Consulta:</strong> 2:00 - 6:00 pm<br>
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Pedro Belisario</p>
+															<p class="color-5 prev-indent-bot">MSDS: 69.464</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Oscar Barrios</p>
+															<p class="color-5 prev-indent-bot">MSDS: 48.256</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 28 ---------------->
+                                        
+                                        <!-- FILA 30 ---------------->
+                                        <!-- M�dicos Residentes ---------------->
+                                        <span class="button" id="v">Médicos Residentes</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Rodolfo Espinoza</p>
+															<p class="color-5 prev-indent-bot">MSDS: 69.353</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Jalvis Flores</p>
+															<p class="color-5 prev-indent-bot">MSDS: 107.590</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Khaled Abou</p>
+															<p class="color-5 prev-indent-bot">MSDS: 78.759</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 30 ---------------->
+                                        
+                                        <!-- FILA 31 ---------------->
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Rossana Qui?ones</p>
+															<p class="color-5 prev-indent-bot">MSDS: 91.909</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Mar?a del M. Gargant?n</p>
+															<p class="color-5 prev-indent-bot">MSDS: 79.494</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Juliana Carmona</p>
+															<p class="color-5 prev-indent-bot">MSDS: 103.265</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 31 ---------------->
+                                        
+                                        <!-- FILA 32 ---------------->
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Mar?a Gabriela Alfonzo</p>
+															<p class="color-5 prev-indent-bot">MSDS: 107.733</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Wayuhi Blanco</p>
+															<p class="color-5 prev-indent-bot">MSDS: X X X</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Belkys Angulo</p>
+															<p class="color-5 prev-indent-bot">MSDS: X X X</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 32 ----------------> 
+                                        <!-- FILA 33 ---------------->
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Karilyn Silva</p>
+															<p class="color-5 prev-indent-bot">MSDS: X X X</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 32 ----------------> 
+                                       
+                                       <!-- M�dicos a Disponibilidad ---------------->
+                                        <span class="button" id="w">M&eacute;dicos a Disponibilidad</span> <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                        <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Carmen Maritza Olivero</p>
+															<p class="color-5 prev-indent-bot">V-01667885-7</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5 prev-indent-bot">Zunilde Contreras</p>
+															<p class="color-5 prev-indent-bot">V-07269489-5</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Luis Olivero</p>
+															<p class="color-5 prev-indent-bot">V-04138660-2</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                </div>
+                                        <!-- FIN FILA 21 ----------------> 
+                                        <!-- FILA 22 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Rafael Castillo</p>
+															<p class="color-5 prev-indent-bot">V-08167617-4</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Arnaldo Orasma</p>
+															<p class="color-5 prev-indent-bot">V-09870049-4</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Miranda Calojero</p>
+															<p class="color-5 prev-indent-bot">V-08896331-4</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 22 ---------------->
+                                        <!-- FILA 23 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Ana Castro</p>
+															<p class="color-5 prev-indent-bot">V-04147210-0</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Sandra Martinez</p>
+															<p class="color-5 prev-indent-bot">V-24420407-0</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Alba Parra</p>
+															<p class="color-5 prev-indent-bot">V-05737032-3</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 23 ---------------->
+                                        <!-- FILA 24 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Victor Padron</p>
+															<p class="color-5 prev-indent-bot">V-04141950-8	</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Andres Olivares</p>
+															<p class="color-5 prev-indent-bot">V-</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Jose Vargas</p>
+															<p class="color-5 prev-indent-bot">V-</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 24 ---------------->
+                                        <!-- FILA 25 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Sergio Paez</p>
+															<p class="color-5 prev-indent-bot">V-08190949-7</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Angel Hernandez</p>
+															<p class="color-5 prev-indent-bot">V-07020675-3</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Richard Bohorquez</p>
+															<p class="color-5 prev-indent-bot">V-12582320-0</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 25 ---------------->
+                                        <!-- FILA 26 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Julio Pino</p>
+															<p class="color-5 prev-indent-bot">V-09590064-8</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Zaida Vielma</p>
+															<p class="color-5 prev-indent-bot">V-04461588-2</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Amalia Abreu</p>
+															<p class="color-5 prev-indent-bot">V-07770321-3</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 26 ---------------->
+                                        <!-- FILA 27 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Sergio Araujo</p>
+															<p class="color-5 prev-indent-bot">V-17394091-9</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Omar Molina</p>
+															<p class="color-5 prev-indent-bot">V-05750444-3</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Luis Martinez</p>
+															<p class="color-5 prev-indent-bot">V-03768543-3</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 27 ---------------->
+                                        <!-- FILA 28 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Ana Valor</p>
+															<p class="color-5 prev-indent-bot">V-03900683-5</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Jose L. Garcia</p>
+															<p class="color-5 prev-indent-bot">V-09872740-6</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Arnol Barros</p>
+															<p class="color-5 prev-indent-bot">V-21639960-5</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 28 ---------------->
+                                        <!-- FILA 29 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Kelvin Venero</p>
+															<p class="color-5 prev-indent-bot">V-14948801-0</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Maria D. Sojo</p>
+															<p class="color-5 prev-indent-bot">MSDS: 71.019</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Yeny Avilan</p>
+															<p class="color-5 prev-indent-bot">V-09871307-3</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 29 ---------------->
+                                        <!-- FILA 30 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Libia Oviedo</p>
+															<p class="color-5 prev-indent-bot">V-09872666-3</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Jorge Romero Rattia</p>
+															<p class="color-5 prev-indent-bot">V-04396338-0</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Angela Tartaret</p>
+															<p class="color-5 prev-indent-bot">V-04883655-7</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 30 ---------------->
+                                        <!-- FILA 31 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Hector Rincones</p>
+															<p class="color-5 prev-indent-bot">MSDS: 12.344</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Abel Pano</p>
+															<p class="color-5 prev-indent-bot">MSDS: 49.805</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Carmen Gonzalez</p>
+															<p class="color-5 prev-indent-bot">V-04138934-2</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 31 ---------------->
+                                        <!-- FILA 32 ----------------> 
+                                         <div class="wrapper p4">	
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Nicolina Di Sapio</p>
+															<p class="color-5 prev-indent-bot">MSDS: 49.806</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Fannys Mendoza</p>
+															<p class="color-5 prev-indent-bot">V-05826988-0</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Carlos Laprea</p>
+															<p class="color-5 prev-indent-bot">V-</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 32 ---------------->
+                                        <!-- FILA 33 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Dinorah Ojeda</p>
+															<p class="color-5 prev-indent-bot">V-04144393-6</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Fannys Mendoza</p>
+															<p class="color-5 prev-indent-bot">V-05736658-0</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Nelson Diaz</p>
+															<p class="color-5 prev-indent-bot">V-</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 33 ---------------->
+                                        <!-- FILA 34 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Pedro Olivero</p>
+															<p class="color-5 prev-indent-bot">V-08154167-8</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Oscar Barrios</p>
+															<p class="color-5 prev-indent-bot">V-09709786-7</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Esser Espa?a</p>
+															<p class="color-5 prev-indent-bot">MSDS: 36.225</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 34 ---------------->
+                                        <!-- FILA 35 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Jose Ramos</p>
+															<p class="color-5 prev-indent-bot">V-14948587-9</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Andres Duran</p>
+															<p class="color-5 prev-indent-bot">MSDS: 20357</p>
+															<p class="color-5 prev-indent-bot">CM: 502</p>
+															<p class="color-5 prev-indent-bot">RIF: 03811527-4 </p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Oscar Briggs</p>
+															<p class="color-5 prev-indent-bot">CM: 1747</p>
+															<p class="color-5 prev-indent-bot">MSDS: 77625</p>
+															<p class="color-5 prev-indent-bot">RIF: 16527109-9</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 35 ---------------->
+                                        <!-- FILA 36 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Aura Urdaneta</p>
+															<p class="color-5 prev-indent-bot">V-05331238-8</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Nicolas Bello</p>
+															<p class="color-5 prev-indent-bot">CM: 1810</p>
+															<p class="color-5 prev-indent-bot">MSDS: 77075</p>
+															<p class="color-5 prev-indent-bot">RIF: 16976996-2</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Igmer Perez</p>
+															<p class="color-5 prev-indent-bot">CM: 8052</p>
+															<p class="color-5 prev-indent-bot">MSDS: 69000</p>
+															<p class="color-5 prev-indent-bot">RIF:15122210-9</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 36 ---------------->
+                                        <!-- FILA 37 ----------------> 
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Gabriel Rodriguez</p>
+															<p class="color-5 prev-indent-bot">V-</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Juan Silva</p>
+															<p class="color-5 prev-indent-bot">V-</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Pedro Belisario</p>
+															<p class="color-5 prev-indent-bot">V-12581583-5</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article> 
+                                                </div>
+                                        <!-- FIN FILA 37 ---------------->
+                                        <!-- FILA 38 ---------------->
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                        <div class="indent-left">
+                                                            <figure class="frame2 p2"></figure>
+                                                            <p class="color-5-5 prev-indent-bot">Aniceto Garcia</p>
+															<p class="color-5 prev-indent-bot">V-</p>
+                                                            <p class="color-5">
+                                                                &deg;<strong>Email</strong>:<br>
+																</p>
+                                                        </div>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 38 ---------------->
+                                        <!-- FILA 39 ---------------->
+                                         <div class="wrapper p4">
+                                                    <article class="grid_4 alpha">
+                                                    <a href="javascript:window.scrollTo(0,0);"><img src="images/up163.png"></a>
+                                                    </article>
+                                                </div>
+                                        <!-- FIN FILA 39 ---------------->                                        				
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </div>
+        <div class="bg-bot">
+        	<div class="main">
+            	<div class="container_12">
+				<!--
+                	<div class="wrapper">
+                    	<article class="grid_4">
+                        	<h3 class="p2">New Furniture</h3>
+                            <div class="wrapper">
+                            	<figure class="img-indent frame2"><img src="images/page4-img7.jpg" alt="" /></figure>
+                                <p class="prev-indent-bot color-5">At vero eos eaccusa mus etusto odio.</p>
+                                <p class="prev-indent-bot">Tium voluptatum del eniti atque corrupti quos dolores.</p>
+                                <a class="button" href="#">View More</a>
+                            </div>
+                        </article>
+                        <article class="grid_8">
+                        	<h3 class="prev-indent-bot2">Our Pricing</h3>
+                            <div class="wrapper">
+                            	<div class="grid_4 alpha">
+                                	<div class="indent-right2">
+                                        <ul class="price-list">
+                                            <li><span>$6700.00</span><a href="#">Totam rem aperiam eaque</a><strong>&nbsp;</strong></li>
+                                            <li><span>$4370.00</span><a href="#">Inventore veritatis quasi</a><strong>&nbsp;</strong></li>
+                                            <li><span>$5780.00</span><a href="#">Nemo enim ipsam voluptatem</a><strong>&nbsp;</strong></li>
+                                            <li><span>$2300.00</span><a href="#">Voluptas sit aspernatur aut</a><strong>&nbsp;</strong></li>
+                                            <li><span>$3650.00</span><a href="#">Sed quia consequuntur magni</a><strong>&nbsp;</strong></li>
+                                            <li class="last"><span>$7900.00</span><a href="#">Ratione voluptatem sequi</a><strong>&nbsp;</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="grid_4 omega">
+                                	<div class="indent-right2">
+                                        <ul class="price-list">
+                                            <li><span>$6700.00</span><a href="#">Totam rem aperiam eaque</a><strong>&nbsp;</strong></li>
+                                            <li><span>$4370.00</span><a href="#">Inventore veritatis quasi</a><strong>&nbsp;</strong></li>
+                                            <li><span>$5780.00</span><a href="#">Nemo enim ipsam voluptatem</a><strong>&nbsp;</strong></li>
+                                            <li><span>$2300.00</span><a href="#">Voluptas sit aspernatur aut</a><strong>&nbsp;</strong></li>
+                                            <li><span>$3650.00</span><a href="#">Sed quia consequuntur magni</a><strong>&nbsp;</strong></li>
+                                            <li class="last"><span>$7900.00</span><a href="#">Ratione voluptatem sequi</a><strong>&nbsp;</strong></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+					-->
+                </div>
+            </div>
+        </div>
+    </section>
+    
+     <!--==============================Publicidad=================================-->   
+        <section>    
+        <div class="bg-bot">
+                <div class="main">
+                    <div class="container_12">
+                        <div class="wrapper">
+                            <article class="grid_4">
+                                <h3 class="prev-indent-bot">Aliados Comerciales</h3>
+                                <p class="prev-indent-bot">xxx</p>
+                                
+                            </article>
+                            
+                            <article class="grid_4">
+                                <h3 class="prev-indent-bot">			</h3>
+                                <p class="prev-indent-bot"></p>
+                                
+                            </article>
+                            
+                          <article class="grid_4">
+                                <h3 class="prev-indent-bot">			</h3>
+                                    <p class="prev-indent-bot"></p>
+                            </article>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <!--==============================Publicidad=================================-->
+    
+	<!--==============================footer=================================-->
+    <footer>
+        <div class="main">
+        	<div class="container_12">
+            	<div class="wrapper">
+                	<div class="grid_4">
+                    	<div>Desarrollado por: Dlia Soluciones C.A.</div>
+                       <!-- <div><a rel="nofollow" target="_blank" href="http://www.templatemonster.com/">Website Template</a> by TemplateMonster.com</div>-->
+                        <!-- {%FOOTER_LINK} -->
+                    </div>
+                    <div class="grid_4">
+                    	<span class="phone-numb"><span>+58(247)</span> 3425119 </span>
+                        <span class="phone-numb"><span>+58(247)</span> 3420891 </span>
+                        <span class="phone-numb"><span>+58(247)</span> 3421989 </span>
+                    </div>
+                    <div class="grid_4">
+                    	<ul class="list-services">
+                        	<li><a href="https://www.facebook.com/centroclinicocoromoto" target="_blank"></a></li>
+                            <li><a class="item-2" href="https://twitter.com/ccoromoto_c" target="_blank"></a></li>
+                            <li><a class="item-3" href="https://instagram.com/centroclinicoromoto/" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

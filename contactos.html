@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>.::Centro Clinico Coromoto::.</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/logoCoromoto.ico">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">   
+    <script src="js/jquery-1.6.2.min.js" type="text/javascript"></script> 
+    <script src="js/jquery.galleriffic.js" type="text/javascript"></script>
+    <script src="js/jquery.opacityrollover.js" type="text/javascript"></script>       
+	<!--[if lt IE 7]>
+        <div style=' clear: both; text-align:center; position: relative;'>
+            <a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0"  alt="" /></a>
+        </div>
+	<![endif]-->
+    <!--[if lt IE 9]>
+   		<script type="text/javascript" src="js/html5.js"></script>
+        <link rel="stylesheet" href="css/ie.css" type="text/css" media="screen">
+	<![endif]-->
+<!---------------------------- Validar formulario ------------------------------    
+    <script type="text/javascript">
+function validacion(){
+	var nombres=document.getElementById('nombre').value;
+	var correo=document.getElementById('email').value;
+	var comentario=document.getElementById('mensaje').value;	
+	if(nombres=='' && correo=='' && comentario==''){
+		alert("Debe rellenar los siguientes campos:\n- Nombre\n- Email\n- Comentario.");
+			return false;}else if(nombres=='' && correo=='' && comentario!=''){
+		alert("Debe rellenar los siguientes campos:\n- Nombre\n- Email.");
+			return false;}else if(nombres=='' && correo!='' && comentario==''){
+		alert("Debe rellenar los siguientes campos:\n- Nombre\n- Comentario.");
+			return false;}else if(nombres=='' && correo!='' && comentario!=''){
+		alert("Debe rellenar los siguientes campos:\n- Nombre.");
+			return false;}else if(nombres!='' && correo=='' && comentario!=''){
+		alert("Debe rellenar los siguientes campos:\n- Email.");
+			return false;}else if(nombres!='' && correo!='' && comentario==''){
+		alert("Debe rellenar los siguientes campos:\n- Comentario.");		
+			return false;}else{
+		return true;
+		document.getElementById('contact-form2').submit()}}
+</script>
+<!---------------------------- Validar formulario ------------------------------>    
+
+    
+</head>
+<body id="page5">
+	<!--==============================header=================================-->
+    <header>
+    	<div class="row-1">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="grid_12">
+                    	<nav>
+                            <ul class="menu">
+                                <li><a href="index.html">Nosotros</a></li>
+                                <li><a href="servicios.html">Servicios</a></li>
+                                <li><a href="galeria.html">Galeria</a></li>
+                                <li><a href="directorio.html">Directorio MÉdico</a></li>
+                                <li><a class="active" href="contactos.html">Contactos</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="row-2">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="grid_9" align="center">
+                    	<h1>
+                        <img src="images/logoCoromoto.jpg" width="60" height="85">
+                            <a class="logo" href="index.html">Centro Clinico Coromoto</a>C.A.
+                        </h1>
+                        <h4 class="grid_9">&quot;Donde tu salud es lo primero&quot; </h4>
+                    </div>
+                    <div class="grid_3">
+<!--                    	<form id="search-form" method="post" enctype="multipart/form-data">
+                            <fieldset>	
+                                <div class="search-field">
+                                    <input name="search" type="text" />
+                                    <a class="search-button" href="#" onClick="document.getElementById('search-form').submit()"><span>search</span></a>	
+                                </div>						
+                            </fieldset>
+                        </form>-->
+                     </div>
+                     <div class="clear"></div>
+                </div>
+            </div>
+        </div>    	
+    </header><div class="ic">More Website Templates  @ TemplateMonster.com - August22nd 2011!</div>
+    
+<!-- content -->
+    <section id="content">
+        <div class="bg-top">
+        	<div class="bg-top-2">
+                <div class="bg">
+                    <div class="bg-top-shadow">
+                        <div class="main">
+                            <div class="box">
+                                <div class="padding">
+                                    <div class="container_12">
+                                        <div class="wrapper">
+                                            <div class="grid_12">
+                                            	<div class="indent-left">
+                                                	<h3 class="p2">Contactenos</h3>
+	<!--<form id="contact-form" action="contactoMail.php" method="post">
+	<fieldset>
+	<label><span class="text-form">Nombres:</span>
+	<input name="nombre" type="text" onBlur="if(this.value=='') this.value='nombre'" onFocus="if(this.value =='nombre' ) this.value=''" /></label>
+    
+	<label><span class="text-form">Email:</span>
+    <input name="email" type="text" onBlur="if(this.value=='') this.value='email'" onFocus="if(this.value =='email' ) this.value=''" /></label> 
+      
+	<label><span class="text-form">Telefono:</span>
+	<input name="telefono" type="text" onBlur="if(this.value=='') this.value='telefono'" onFocus="if(this.value =='telefono' ) this.value=''" /></label>
+	<div class="wrapper">
+    	<div class="text-form">Mensajes:</div><textarea name="asunto"  this.value='asunto'" onFocus="if(this.value =='asunto' ) this.value=''"></textarea>
+    </div>
+	<div class="buttons">
+	<a class="button" href="#" onClick="document.getElementById('contact-form').reset()">Borra</a>
+	<a class="button" href="#" onClick="document.getElementById('contact-form').submit()">Envia</a>
+	</div>                             
+                                                        </fieldset>						
+                                                    </form>-->
+                                                    
+                                                    
+<form id="contact-form" method="post" ACTION="contactoMail.php" onSubmit="return validar()">
+	<fieldset>
+    	<label><span class="text-form">"Nombre o Razon Social:</span></label>
+    	<label><input name="nombre" onBlur="if(this.value=='') this.value='nombre'" onFocus="if(this.value =='nombre' ) this.value=''" /></label>
+        
+        <label><span class="text-form">"Email:</span></label>
+        <label><input name="mail" onBlur="if(this.value=='') this.value='mail'" onFocus="if(this.value =='mail' ) this.value=''" /></label>
+        
+        <label><span class="text-form">"Mensajes:</span></label>
+        <textarea name="Message" onBlur="if(this.value=='') this.value='Message'" onFocus="if(this.value =='Message' ) this.value=''"></textarea>
+                                    
+<!-- Validacion---------------------------------------------------------------------------------------------->        
+ <script type="text/javascript" language="javascript">
+function validar(){
+
+		if(!formu.nombre.value.match(/[a-z A-Z ñÑ]/) || formu.nombre.value.match(/[0-9]+/) ||formu.nombre.value.match(/[☻♥♦♣♠•◘○◙♂♀♪♫☼►◄↕‼¶§▬↨↑↓→←∟↔!"#$%&'()*+,-./:;<=>?@[\]^{|}~⌂ÇüâäàåçêëèïîìÄÅæÆôöòûùÿÖÜø£Ø×ƒªº¿®¬½¼¡«»░▒▓│┤ÁÂÀ©╣║╗╝¢¥┐└┴┬├─┼ãÃ╚╔╩╦╠═╬¤ðÐÊËÈÎÏ┘┌█▄¦Ì▀ÓßÔÒõÕµþÞÚÛÙýÝ¯´­±‗¾¶§÷¸°¨•¹³²■]+/)){
+			formu.nombre.focus();
+			alert("Ingrese su Nombre correctamente");
+			return false;}
+		if(!formu.email.value.match(/^([a-zA-Z0-9ñÑ_\.\-])+\@(([a-zA-Z0-9??\-])+\.)+([a-zA-Z0-9??]{2,4})+$/)){
+			formu.email.focus();
+			alert("Ingrese su Correo correctamente");
+			return false;}
+		if(formu.comentario.value==""){
+			formu.comentario.focus();
+			alert("Ingrese un comentario");
+			return false;}	  
+}
+</script>         
+ <!-- ------------------------------------------------------------------------------------------------------->
+                                    
+		<div class="buttons">
+			<a href="#" onClick="document.getElementById('contact-form').reset()">Borra</a>
+            <a href="#" onClick="document.getElementById('contact-form').submit()">Envia</a>
+		</div>
+	</fieldset>
+</form>
+                                                    
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>	
+        </div>
+        <div class="bg-bot">
+        	<div class="main">
+            	<div class="container_12">
+                	<div class="wrapper">
+                    	<article class="grid_3">
+                        	<h3 class="prev-indent-bot">Dirección</h3>
+                            <dl>
+                                <dt class="indent-bot">Dirección: Av. Miranda cruce con calle Negro Primero, sector El Cañito, Edificio Centro Clinico "Coromoto". Municipio San Fernando. Edo. Apure. Venezuela.</dt>
+                                <dd><span>Telefonos:</span>  (0247)3425119</dd>
+                                <dd><span>           </span>  (0247)3420891</dd>
+                                <dd><span>           </span>  (0247)3421989</dd>
+                                <dd><strong>E-mail:</strong> <a href="#">cccoromoto_1@hotmail.com</a></dd>
+                            </dl>
+                        </article>
+                        <article class="grid_9">
+                        	<h3 class="prev-indent-bot">Nuestra ubicación</h3>
+                            <strong> <p align="center"><iframe src="https://www.google.com/maps/@10.221215,-67.480989,15z?hl=es" style="border:0" width="550" height="310"></iframe><!--<img src="images/mapa.jpg" width="591" height="370" align="middle">--></p></strong>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+	<!--==============================footer=================================-->
+    
+     <!--==============================Publicidad=================================-->   
+        <section>    
+        <div class="bg-bot">
+                <div class="main">
+                    <div class="container_12">
+                      <div class="wrapper">
+                            <article class="grid_4">
+                                <h3 class="prev-indent-bot">Redes Sociales</h3>
+                                <p class="prev-indent-bot">xxx</p>
+                                
+                            </article>
+                            
+                            <article class="grid_4">
+                                <h5 class="prev-indent-bot">Twitter</h5>
+                                <p class="prev-indent-bot">
+									<a class="twitter-timeline" href="https://twitter.com/Cuadran_Cagua" data-widget-id="611206412438499328">Tweets por el @Cuadran_Cagua.</a>
+									<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+									</p>
+                                
+                            </article>
+                            
+                          <article class="grid_4">
+                                <h5 class="prev-indent-bot">	Facebook		</h5>
+                                    <p class="prev-indent-bot">	 
+											<iframe src="http://widget.websta.me/in/caguacuadrangular?fref=ts/?s=100&w=2&h=3&b=1&p=5" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:230px; height:305px" height="150" ></iframe>
+									</p>
+                            </article>
+                        </div>
+						
+						
+						<div class="wrapper">
+                            <article class="grid_4">
+                                <h3 class="prev-indent-bot">Aliados Comerciales</h3>
+                                <p class="prev-indent-bot">xxx</p>
+                                
+                            </article>
+                            
+                            <article class="grid_4">
+                                <h3 class="prev-indent-bot">			</h3>
+                                <p class="prev-indent-bot"></p>
+                                
+                            </article>
+                            
+                          <article class="grid_4">
+                                <h3 class="prev-indent-bot">			</h3>
+                                    <p class="prev-indent-bot"></p>
+                            </article>
+                            
+                        </div>
+						
+                    </div>
+                </div>
+            </div>    
+        </section>
+        <!--==============================Publicidad=================================-->
+    <footer>
+        <div class="main">
+        	<div class="container_12">
+            	<div class="wrapper">
+                	<div class="grid_4">
+                    	<div>Desarrollado por: Dlia Soluciones C.A.</div>
+                       <!-- <div><a rel="nofollow" target="_blank" href="http://www.templatemonster.com/">Website Template</a> by TemplateMonster.com | <a rel="nofollow" target="_blank" href="http://www.html5xcss3.com/">html5xcss3.com</a></div>-->
+                        <!-- {%FOOTER_LINK} -->
+                    </div>
+                    <div class="grid_4">
+                    	<span class="phone-numb"><span>+58(247) 3425119 </span></span>
+                        <span class="phone-numb"><span>+58(247) 3420891 </span></span>
+                        <span class="phone-numb"><span>+58(247) 3421989 </span></span>
+                    </div>
+                    <div class="grid_4">
+                    	<ul class="list-services">
+                        	<li><a href="https://www.facebook.com/centroclinicocoromoto" target="_blank"></a></li>
+                            <li><a class="item-2" href="https://twitter.com/ccoromoto_c" target="_blank"></a></li>
+                            <li><a class="item-3" href="https://instagram.com/centroclinicoromoto/" target="_blank"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
